@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AnchorPane" prefHeight="650.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.MainXMLController">
+   <children>
+      <ImageView fitHeight="723.0" fitWidth="716.0" layoutY="-5.0" pickOnBounds="true">
+         <image>
+            <Image url="@img/background.jpeg" />
+         </image>
+      </ImageView>
+     
+      <Button fx:id="onePlayerBtn" layoutX="170.0" layoutY="211.0" mnemonicParsing="false" onAction="#goToAIScene" prefHeight="93.0" prefWidth="378.0" style="-fx-background-color: transparent;" text="One Player" textFill="#ff892e">
+         <font>
+            <Font name="Britannic Bold" size="54.0" />
+         </font></Button>
+      <Button fx:id="onlineBtn" layoutX="209.0" layoutY="487.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#goToLogin" prefHeight="82.0" prefWidth="299.0" style="-fx-background-color: transparent;" text="Online" textFill="#ff892e">
+         <font>
+            <Font name="Britannic Bold" size="54.0" />
+         </font></Button>
+      <Button fx:id="twoPlayerBtn" layoutX="180.0" layoutY="312.0" mnemonicParsing="false" onAction="#goToTowPlayerScene" prefHeight="76.0" prefWidth="357.0" style="-fx-background-color: transparent;" text="Two Player" textFill="#ff892e">
+         <font>
+            <Font name="Britannic Bold" size="54.0" />
+         </font></Button>
+
+
+
+      <ImageView fitHeight="160.0" fitWidth="525.0" layoutX="63.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/logo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="replays" layoutX="210.0" layoutY="391.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#goToList" prefHeight="79.0" prefWidth="299.0" style="-fx-background-color: transparent;" text="Replays" textFill="#ff892e">
+         <font>
+            <Font name="Britannic Bold" size="54.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

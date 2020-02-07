@@ -1,0 +1,22 @@
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: #e5e5e5;
+	-fx-font-weight: bold    
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: #dedfe0;
+
+    -fx-text-fill: white;
+-fx-font-weight: bold
+}
+.list-cell {
+    -fx-background-color: transparent;
+	-fx-font-size:18.0;
+-fx-text-fill:white;
+-fx-font-weight: bold
+}
+.list-view {
+    -fx-background-color: transparent;
+-fx-text-fill:white;
+-fx-font-weight: bold
+}

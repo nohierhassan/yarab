@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="replayPane" prefHeight="650.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.ReplaysController">
+   <children>
+      <ImageView fitHeight="728.0" fitWidth="714.0" pickOnBounds="true">
+         <image>
+            <Image url="@img/background.jpeg" />
+         </image>
+      </ImageView>
+      <ListView fx:id="replays" fixedCellSize="0.0" onMouseClicked="#openVideo" prefHeight="567.0" prefWidth="650.0" stylesheets="@list.css" />
+      <Button fx:id="back" layoutX="7.0" layoutY="576.0" mnemonicParsing="false" onAction="#onBack" prefHeight="74.0" prefWidth="170.0" style="-fx-background-color: transparent;" text="Back" textFill="#ff892efc">
+         <font>
+            <Font name="Britannic Bold" size="40.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

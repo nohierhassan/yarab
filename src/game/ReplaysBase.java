@@ -41,7 +41,7 @@ public abstract class ReplaysBase extends AnchorPane {
         back.setPrefHeight(74.0);
         back.setPrefWidth(170.0);
         back.setStyle("-fx-background-color: transparent;");
-        back.setText("WHITE");
+        back.setText("BACK");
         back.setTextFill(javafx.scene.paint.Color.valueOf("#ff892efc"));
         back.setFont(new Font("Britannic Bold", 40.0));
 

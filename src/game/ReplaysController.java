@@ -24,6 +24,7 @@ import java.util.Queue;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
 import javafx.scene.control.MenuItem;
@@ -31,6 +32,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
+import javafx.stage.Stage;
 
 
 /**
@@ -151,6 +153,14 @@ public class ReplaysController implements Initializable {
          System.out.println(str);
          replays.getItems().add(str);
      }
+     replays.setOnMouseClicked(new EventHandler<MouseEvent>() {
+
+        @Override
+        public void handle(MouseEvent event) {
+            System.out.println("clicked on " + replays.getSelectionModel().getSelectedIndex());
+//            new replayGame((this), 0);
+        }
+    });
      
         
     }
